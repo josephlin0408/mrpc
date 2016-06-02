@@ -1,0 +1,40 @@
+---
+
+執行時間: 2016-06-02 13:40:01
+訂單編號: 151
+客戶名稱: 姚淑菁
+客戶電話: 0916135169
+寄送結果: 成功
+訂單內容: <?xml version="1.0" encoding="utf-8"?>
+<order><corporation_id>WK</corporation_id><api_key>9883c2deb84afdfa90abfee603ea3f37</api_key><del_type_id>70</del_type_id><post_id>600</post_id><address>嘉義市東區忠孝路790-65號5樓之1</address><name>姚淑菁</name><phone_no>0916135169</phone_no><mobile_no>0916135169</mobile_no><auction_ac> </auction_ac><agency_fee>0</agency_fee><packstr> </packstr><del_time_id>4</del_time_id><other_fee>0</other_fee><inv_no>0</inv_no><inv_date> </inv_date><inv_chkno> </inv_chkno><uniformno> </uniformno><inv_title> </inv_title><inv_unamt>0</inv_unamt><inv_tax>0</inv_tax><inv_amt>0</inv_amt><inv_tax_1>0</inv_tax_1><bank_name> </bank_name><bank_code> </bank_code><orderno>151</orderno><items><item><product_id>WKMB</product_id><qty>1</qty><price>350</price></item></items></order>
+
+---
+
+執行時間: 2016-06-02 13:41:02
+訂單編號: 152
+客戶名稱: 何家維
+客戶電話: 0960631656
+寄送結果: 成功
+訂單內容: <?xml version="1.0" encoding="utf-8"?>
+<order><corporation_id>WK</corporation_id><api_key>9883c2deb84afdfa90abfee603ea3f37</api_key><del_type_id>70</del_type_id><post_id>100</post_id><address>台北市中正區南海路132號25樓</address><name>何家維</name><phone_no>0960631656</phone_no><mobile_no>0960631656</mobile_no><auction_ac> </auction_ac><agency_fee>450</agency_fee><packstr> </packstr><del_time_id>4</del_time_id><other_fee>0</other_fee><inv_no>0</inv_no><inv_date> </inv_date><inv_chkno> </inv_chkno><uniformno> </uniformno><inv_title> </inv_title><inv_unamt>0</inv_unamt><inv_tax>0</inv_tax><inv_amt>0</inv_amt><inv_tax_1>0</inv_tax_1><bank_name> </bank_name><bank_code> </bank_code><orderno>152</orderno><items><item><product_id>WKMB</product_id><qty>1</qty><price>350</price></item></items></order>
+
+---
+
+執行時間: 2016-06-02 15:34:02
+訂單編號: 155
+客戶名稱: josephlin
+客戶電話: 0987654321
+寄送結果: 成功
+訂單內容: <?xml version="1.0" encoding="utf-8"?>
+<order><corporation_id>WK</corporation_id><api_key>9883c2deb84afdfa90abfee603ea3f37</api_key><del_type_id>70</del_type_id><post_id>800</post_id><address>高雄市新興區高雄市楠梓區test</address><name>josephlin</name><phone_no>0987654321</phone_no><mobile_no>0987654321</mobile_no><auction_ac> </auction_ac><agency_fee>0</agency_fee><packstr> </packstr><del_time_id>4</del_time_id><other_fee>0</other_fee><inv_no>0</inv_no><inv_date> </inv_date><inv_chkno> </inv_chkno><uniformno> </uniformno><inv_title> </inv_title><inv_unamt>0</inv_unamt><inv_tax>0</inv_tax><inv_amt>0</inv_amt><inv_tax_1>0</inv_tax_1><bank_name> </bank_name><bank_code> </bank_code><orderno>155</orderno><items><item><product_id>WKMB</product_id><qty>1</qty><price>350</price></item></items></order>
+
+---
+
+執行時間: 2016-06-02 15:42:01
+訂單編號: 156
+客戶名稱: josephlin
+客戶電話: 0987654321
+寄送結果: 成功
+訂單內容: <?xml version="1.0" encoding="utf-8"?>
+<order><corporation_id>WK</corporation_id><api_key>9883c2deb84afdfa90abfee603ea3f37</api_key><del_type_id>70</del_type_id><post_id>800</post_id><address>高雄市新興區高雄市楠梓區test</address><name>josephlin</name><phone_no>0987654321</phone_no><mobile_no>0987654321</mobile_no><auction_ac> </auction_ac><agency_fee>0</agency_fee><packstr> </packstr><del_time_id>4</del_time_id><other_fee>0</other_fee><inv_no>0</inv_no><inv_date> </inv_date><inv_chkno> </inv_chkno><uniformno> </uniformno><inv_title> </inv_title><inv_unamt>0</inv_unamt><inv_tax>0</inv_tax><inv_amt>0</inv_amt><inv_tax_1>0</inv_tax_1><bank_name> </bank_name><bank_code> </bank_code><orderno>156</orderno><items><item><product_id>WKMB</product_id><qty>1</qty><price>350</price></item></items></order>
+
