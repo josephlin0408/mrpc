@@ -99,6 +99,13 @@
                                 </div>
                             </div>
 
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">客服留言</label>
+                                <div class="col-md-9">
+                                    <textarea name="order_note" class="form-control" rows="3"><?php echo $order_item['order_note']; ?></textarea>
+                                </div>
+                            </div>
+
                             <div class="form-group hidden">
                                 <label class="col-md-3 control-label">發票選項</label>
                                 <div class="col-md-9">

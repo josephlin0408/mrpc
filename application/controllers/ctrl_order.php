@@ -339,6 +339,7 @@ class Ctrl_order extends CI_Controller
                 'order_tracking_number'    => $this->input->post('order_tracking_number'),
                 'order_invoice_number'     => $this->input->post('order_invoice_number'),
                 'order_notes'              => $this->input->post('order_notes'),
+                'order_note'               => $this->input->post('order_note'),
                 'order_account_last_5'     => $this->input->post('order_account_last_5')
             );
 
