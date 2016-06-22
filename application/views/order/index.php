@@ -94,7 +94,7 @@
                         <div class="form-group">
                             <label class="col-md-3 control-label">訂單狀態</label>
                             <div class="col-md-9">
-                                <select name='STATUS' class='form-control STATUS'>
+                                <select name='STATUS' class='form-control STATUS search_select'>
                                     <option value=''>請選擇狀態</option>
                                     <option value='0'  <?php if(isset($order_search)){ if($order_search['STATUS']==0 AND $order_search['STATUS']!='')echo "selected='selected'"; } ?>>未完成</option>
                                     <option value='1'  <?php if(isset($order_search)){ if($order_search['STATUS']==1)echo "selected='selected'"; } ?> >可出貨</option>
@@ -107,7 +107,7 @@
                         <div class="form-group">
                             <label class="col-md-3 control-label">付款選項</label>
                             <div class="col-md-9">
-                                <select name='PAYMENT_OPTION' class='form-control'>
+                                <select name='PAYMENT_OPTION' class='form-control search_select'>
                                     <option value=''>請選擇</option>
                                     <option value='1'  <?php if(isset($order_search)){ if($order_search['PAYMENT_OPTION']==1)echo "selected='selected'"; } ?> >貨到付款</option>
                                     <option value='2'  <?php if(isset($order_search)){ if($order_search['PAYMENT_OPTION']==2)echo "selected='selected'"; } ?> >轉帳付款</option>
@@ -118,7 +118,7 @@
                         <div class="form-group">
                             <label class="col-md-3 control-label">發票選項</label>
                             <div class="col-md-9">
-                                <select name='INVOICE' class='form-control'>
+                                <select name='INVOICE' class='form-control search_select'>
                                     <option value=''>請選擇</option>
                                     <option value='2'  <?php if(isset($order_search)){ if($order_search['INVOICE']==2)echo "selected='selected'"; } ?> >電子發票</option>
                                     <option value='3'  <?php if(isset($order_search)){ if($order_search['INVOICE']==3)echo "selected='selected'"; } ?> >手開發票</option>
@@ -128,7 +128,7 @@
                         <div class="form-group">
                             <label class="col-md-3 control-label">是否已開出發票</label>
                             <div class="col-md-9">
-                                <select name='INVOICE_STATUS' class='form-control STATUS'>
+                                <select name='INVOICE_STATUS' class='form-control STATUS search_select'>
                                     <option value=''    <?php if(isset($order_search)){ if($order_search['INVOICE_STATUS']==0 )echo "selected='selected'"; } ?>>請選擇</option>
                                     <option value='1'  <?php if(isset($order_search)){ if($order_search['INVOICE_STATUS']==1 )echo "selected='selected'"; } ?>>否</option>
                                     <option value='2'  <?php if(isset($order_search)){ if($order_search['INVOICE_STATUS']==2 )echo "selected='selected'"; } ?> >是</option>
@@ -138,8 +138,7 @@
 
                     </div>
                         <div class="col-md-12" style="text-align: right">
-                            <input type="hidden" name="RESET" value="0" id="reset">
-                            <input type="reset" value="重置條件" class="btn btn-sm btn-success" onclick="$('#reset').val(1)">
+                            <button type="reset" id="reset" class="btn btn-sm btn-success" onclick="reset_form()">重置條件</button>
                             <button type="submit" class="btn btn-sm btn-success">Search 搜尋</button>
                         </div>
                     </form>
@@ -218,7 +217,9 @@
                                     <td>
                                         <span class="hint-bottom" data-hint="<?=$order_item['invoice_msg']?>">
                                             <?php if($order_item['order_shipping_option']%2==0)echo "<i class='fa fa-forward' style='color:green'></i> "?>
-                                            <?= $order_item['order_member_name'] ?><?if($order_item['invoice_msg']!="")echo " <i class='fa fa-comment'></i>"?><br><?= $order_item['order_create_stamp'] ?>
+                                            <?= $order_item['order_member_name'] ?>
+                                            <?php if($order_item['invoice_msg']!="")echo " <i class='fa fa-comment'></i>"?><br>
+                                            <?= $order_item['order_create_stamp'] ?>
                                         </span>
                                     </td>
                                     <td>
@@ -241,7 +242,7 @@
                                         <div id="order_status_<?= $order_item['order_id'] ?>">
                                             <span style="display: none"><?php echo $order_item['order_status'] ?></span>
                                             <?php if($order_item['order_status'] == -2){
-                                                echo "<span class='hint--bottom' data-hint='這筆訂單損失：".$order_item['order_lose_money']."元'>";
+                                                // echo "<span class='hint--bottom' data-hint='這筆訂單損失：".$order_item['order_lose_money']."元'>";
                                             }?><?php echo $order_item['STATUS_IMAGE'] ?>
                                         </div>
                                     </td>
@@ -419,10 +420,6 @@
             }
         });
 
-        $('#reset').click(function() {
-            $( '.search_input' ).attr("value",'');
-        });
-
         $('#btn-search-function').click(function() {
             $("#panel-search").toggle();
         });
@@ -488,6 +485,11 @@
             }
         });
     });
+
+    function reset_form() {
+        $( '.search_input' ).attr("value",'');
+        $( '.search_select' ).attr("value",'');
+    }
 
 
 </script>
